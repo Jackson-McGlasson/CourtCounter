@@ -16,6 +16,7 @@
         android:textAlignment="center"
         android:textSize="60sp"
         android:id="@+id/textView"
+        android:gravity="center"
         android:background="#cd5e5e"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
@@ -27,6 +28,21 @@
         android:textAlignment="center"
         android:textSize="40sp"
         android:layout_below="@+id/textView"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="#918686"
+        android:id="@+id/textView2" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="70sp"
+        android:background="#e4e4e1"
+        android:layout_below="@+id/textView2"
+        android:gravity="center"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
