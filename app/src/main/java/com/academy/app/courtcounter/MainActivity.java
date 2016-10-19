@@ -8,6 +8,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView textView3;
     public void onClick1(Button button1){
+        textView3.setText("1");
     }
 
     @Override
