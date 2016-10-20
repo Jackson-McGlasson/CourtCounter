@@ -7,8 +7,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView3;
+    private TextView textView6;
+    private int a;
     public void onClick1(Button button1){
-        textView3.setText("1");
+        a++;
+        textView3.setText(String.valueOf(a));
+        textView3.setText("" +a);
     }
 
     @Override
