@@ -14,6 +14,11 @@ public class MainActivity extends AppCompatActivity {
         textView3.setText(String.valueOf(a));
         textView3.setText("" +a);
     }
+    public void onClick2(Button button2){
+        a++;
+        textView6.setText(String.valueOf(a));
+        textView6.setText("" +a);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,5 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         textView3 = (TextView)findViewById(R.id.textView3);
         textView3.setText("0");
+        textView6 = (TextView)findViewById(R.id.textView6);
+        textView6.setText("0");
     }
 }
