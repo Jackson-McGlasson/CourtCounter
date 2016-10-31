@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
                         dialog.dismiss();
                     }
                 });
+        gameOverAlert.show();
     }
 
     @Override
