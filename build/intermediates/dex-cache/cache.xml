@@ -9,6 +9,13 @@
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.0_49cb798dce5fa562a26f4e9d03f1e3a4cc8a6b20\classes.dex" />
     </item>
     <item
+        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_12aa69985fe038440aab9c0591e865d038939ead\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.2"
@@ -21,34 +28,6 @@
         revision="24.0.2"
         sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.0_878fd3767612a3c1c16d06d650a2395d6e4eb501\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Student\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
-        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_8c19851f86480cce0e9526918e77e2e67e9b5f5c\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
-        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_924ab30a2d52ff4a03131f8f1cf5ac1b40b000ee\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
-        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_a5166633b01be2e8c3076bd30d8141397b94009b\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.0\jars\libs\internal_impl-24.2.0.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
-        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_12aa69985fe038440aab9c0591e865d038939ead\classes.dex" />
     </item>
     <item
         jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.0\jars\classes.jar"
@@ -93,6 +72,13 @@
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.0_d89724d7804a8ed1cf46a486bab84d2dfaf444f2\classes.dex" />
     </item>
     <item
+        jar="C:\Users\Student\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.0\support-annotations-24.2.0.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.0_8c19851f86480cce0e9526918e77e2e67e9b5f5c\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.2"
@@ -105,6 +91,20 @@
         revision="24.0.2"
         sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
         <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.0_c27465f741157349c0bbb26018524c4532ed5bab\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.0_924ab30a2d52ff4a03131f8f1cf5ac1b40b000ee\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.0_a5166633b01be2e8c3076bd30d8141397b94009b\classes.dex" />
     </item>
     <item
         jar="C:\Users\Student\AndroidStudioProjects\CourtCounter\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.0\jars\libs\internal_impl-24.2.0.jar"

@@ -2,6 +2,7 @@ package com.academy.app.courtcounter;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,12 +21,16 @@ public class MainActivity extends AppCompatActivity {
         textView3.setText(String.valueOf(a));
         textView3.setText("" +a);
         team1Score = a;
+        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
+        mediaPlayer.start();
     }
     public void onClick2(Button button2){
         b++;
         textView6.setText(String.valueOf(b));
         textView6.setText("" +b);
         team2Score = b;
+        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
+        mediaPlayer.start();
 
     }
     public void onClick3(Button resetButton){
