@@ -11,25 +11,33 @@ public class MainActivity extends AppCompatActivity {
     private TextView textView3;
     private TextView textView6;
     private int a;
-  //  public team1Score = String.valueOf(textView6)
+    private int b;
+    private int team1Score;
+    private int team2Score;
+
     public void onClick1(Button button1){
         a++;
         textView3.setText(String.valueOf(a));
         textView3.setText("" +a);
+        team1Score = a;
     }
     public void onClick2(Button button2){
-        a++;
-        textView6.setText(String.valueOf(a));
-        textView6.setText("" +a);
+        b++;
+        textView6.setText(String.valueOf(b));
+        textView6.setText("" +b);
+        team2Score = b;
 
     }
     public void onClick3(Button resetButton){
         AlertDialog gameOverAlert;
         gameOverAlert= new AlertDialog.Builder(MainActivity.this).create();
         gameOverAlert.setTitle("Alert Title");
-      //  if (team1Score > team2Score) {
+        if (team1Score > team2Score) {
             gameOverAlert.setMessage("Team 1 wins");
-      //  }
+        }
+        if (team2Score > team1Score) {
+            gameOverAlert.setMessage("Team 2 wins");
+        }
         gameOverAlert.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
