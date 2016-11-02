@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private int team1Score;
     private int team2Score;
 
-    public void onClick1(Button button1){
+    public void blueClickPlus(Button button1){
         a++;
         textView3.setText(String.valueOf(a));
         textView3.setText("" +a);
@@ -24,16 +24,31 @@ public class MainActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
     }
-    public void onClick2(Button button2){
+    public void blueClickMinus(Button button4){
+        a--;
+        textView3.setText(String.valueOf(a));
+        textView3.setText("" +a);
+        team1Score = a;
+        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
+        mediaPlayer.start();
+    }
+    public void redClickPlus(Button button2){
         b++;
         textView6.setText(String.valueOf(b));
         textView6.setText("" +b);
         team2Score = b;
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
-
     }
-    public void onClick3(Button resetButton){
+    public void redClickMinus(Button button5){
+        b--;
+        textView6.setText(String.valueOf(b));
+        textView6.setText("" +b);
+        team2Score = b;
+        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
+        mediaPlayer.start();
+    }
+    public void resetClick(Button resetButton){
         AlertDialog gameOverAlert;
         gameOverAlert= new AlertDialog.Builder(MainActivity.this).create();
         gameOverAlert.setTitle("Alert Title");

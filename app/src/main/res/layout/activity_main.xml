@@ -66,7 +66,14 @@
                 android:text="+1 Point"
                 android:id="@+id/button1"
                 android:layout_gravity="center_horizontal"
-                android:onClick="onClick1"/>
+                android:onClick="blueClickPlus"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-1 Point"
+                android:id="@+id/button3"
+                android:layout_gravity="center_horizontal"
+                android:onClick="blueClickMinus"/>
         </LinearLayout>
 
         <LinearLayout
@@ -122,7 +129,14 @@
                 android:text="+1 Point"
                 android:id="@+id/button2"
                 android:layout_gravity="center_horizontal"
-                android:onClick="onClick2"/>
+                android:onClick="redClickPlus"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-1 Point"
+                android:id="@+id/button4"
+                android:layout_gravity="center_horizontal"
+                android:onClick="redClickMinus"/>
 
         </LinearLayout>
     </LinearLayout>
@@ -139,7 +153,7 @@
             android:layout_height="wrap_content"
             android:text="Reset"
             android:id="@+id/resetButton"
-            android:onClick="onClick3"/>
+            android:onClick="resetClick"/>
     </LinearLayout>
 
 </RelativeLayout>
