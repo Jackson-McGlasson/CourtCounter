@@ -6,20 +6,31 @@ import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private TextView textView3;
     private TextView textView6;
+    private String team1Name;
+    private String team2Name;
     private int a;
     private int b;
     private int team1Score;
     private int team2Score;
 
+//    public EditText textView1(){
+//
+//    }
+//
+//    public EditText textView4(){
+//
+//    }
+
     public void blueClickPlus(Button button1){
         a++;
         textView3.setText(String.valueOf(a));
-        textView3.setText("" +a);
+        textView3.setText(a);
         team1Score = a;
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
@@ -53,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
         gameOverAlert= new AlertDialog.Builder(MainActivity.this).create();
         gameOverAlert.setTitle("Alert Title");
         if (team1Score > team2Score) {
-            gameOverAlert.setMessage("Team 1 wins");
+            gameOverAlert.setMessage(team1Name + " Wins!");
         }
         if (team2Score > team1Score) {
-            gameOverAlert.setMessage("Team 2 wins");
+            gameOverAlert.setMessage(team2Name + " Wins!");
         }
         gameOverAlert.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
@@ -75,5 +86,6 @@ public class MainActivity extends AppCompatActivity {
         textView3.setText("0");
         textView6 = (TextView)findViewById(R.id.textView6);
         textView6.setText("0");
+        //team1Name = textView1.getText().toString();
     }
 }
