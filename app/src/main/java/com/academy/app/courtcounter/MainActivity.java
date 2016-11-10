@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -12,6 +13,8 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView textView3;
     private TextView textView6;
+    private EditText textView1;
+    private EditText textView2;
     private String team1Name;
     private String team2Name;
     private int a;
@@ -25,17 +28,20 @@ public class MainActivity extends AppCompatActivity {
 //
 //    public EditText textView4(){
 //
+//    public void nameTeam(){
+//
+//        team1Name = textView1.getText().toString();
 //    }
 
-    public void blueClickPlus(Button button1){
+    public void blueClickPlus(View button1){
         a++;
         textView3.setText(String.valueOf(a));
-        textView3.setText(a);
+        textView3.setText("" +a);
         team1Score = a;
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
     }
-    public void blueClickMinus(Button button4){
+    public void blueClickMinus(View button4){
         a--;
         textView3.setText(String.valueOf(a));
         textView3.setText("" +a);
@@ -43,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
     }
-    public void redClickPlus(Button button2){
+    public void redClickPlus(View button2){
         b++;
         textView6.setText(String.valueOf(b));
         textView6.setText("" +b);
@@ -51,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
     }
-    public void redClickMinus(Button button5){
+    public void redClickMinus(View button5){
         b--;
         textView6.setText(String.valueOf(b));
         textView6.setText("" +b);
@@ -59,16 +65,19 @@ public class MainActivity extends AppCompatActivity {
         MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
         mediaPlayer.start();
     }
-    public void resetClick(Button resetButton){
+    public void resetClick(View resetButton){
         AlertDialog gameOverAlert;
         gameOverAlert= new AlertDialog.Builder(MainActivity.this).create();
         gameOverAlert.setTitle("Alert Title");
         if (team1Score > team2Score) {
             gameOverAlert.setMessage(team1Name + " Wins!");
+            team1Score = 0;
         }
         if (team2Score > team1Score) {
             gameOverAlert.setMessage(team2Name + " Wins!");
+            team2Score = 0;
         }
+
         gameOverAlert.setButton(AlertDialog.BUTTON_NEUTRAL, "OK",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {
@@ -76,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
         gameOverAlert.show();
+
+
     }
 
     @Override
@@ -88,4 +99,5 @@ public class MainActivity extends AppCompatActivity {
         textView6.setText("0");
         //team1Name = textView1.getText().toString();
     }
+
 }
