@@ -12,19 +12,14 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     private TextView textView3;
     private TextView textView6;
-   private EditText textView1;
-   private EditText textView4;
+    private EditText textView1;
+    private EditText textView4;
     private String team1Name;
     private String team2Name;
     private int a;
     private int b;
     private int team1Score;
     private int team2Score;
-
-
-
-
-
 
 
     public void blueClickPlus(View button1){
@@ -82,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
                 });
         gameOverAlert.show();
 
-
     }
 
     @Override
@@ -95,8 +89,6 @@ public class MainActivity extends AppCompatActivity {
         textView6.setText("0");
         textView1 = (EditText)findViewById(R.id.textView1);
         textView4 = (EditText)findViewById(R.id.textView4);
-
-        //team1Name = textView1.getText().toString();
     }
 
 }
