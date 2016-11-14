@@ -70,11 +70,11 @@ public class MainActivity extends AppCompatActivity {
         gameOverAlert= new AlertDialog.Builder(MainActivity.this).create();
         gameOverAlert.setTitle("Alert Title");
         if (team1Score > team2Score) {
-            gameOverAlert.setMessage(team1Name + " Wins!");
+            gameOverAlert.setMessage(team1Name + "(Team 1) Wins!");
             team1Score = 0;
         }
         if (team2Score > team1Score) {
-            gameOverAlert.setMessage(team2Name + " Wins!");
+            gameOverAlert.setMessage(team2Name + "(Team 2) Wins!");
             team2Score = 0;
         }
 
