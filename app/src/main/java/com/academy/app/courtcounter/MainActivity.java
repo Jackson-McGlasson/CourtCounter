@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         textView3.setText(String.valueOf(a));
         textView3.setText("" +a);
         team1Score = a;
-        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
+        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.time);
         mediaPlayer.start();
     }
     public void redClickPlus(View button2){
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         textView6.setText(String.valueOf(b));
         textView6.setText("" +b);
         team2Score = b;
-        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.boom);
+        MediaPlayer mediaPlayer = MediaPlayer.create(getApplicationContext(), R.raw.time);
         mediaPlayer.start();
     }
     public void resetClick(View resetButton){
